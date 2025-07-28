@@ -2,9 +2,16 @@
 import { use, useState } from 'react';
 import styles from './Dropdown.module.css'; // nome do arquivo corrigido aqui
 /**
- * @param {{ options: string[], title: string, dropdowntype: string, multoptions: boolean }} props
+ * @param {{
+ *   style?: React.CSSProperties,
+ *   id: string | number,
+ *   options: string[],
+ *   title: string,
+ *   dropdowntype?: string,
+ *   multoptions?: boolean
+ * }} props
  */
-export default function DropdownLocal(props) {
+export default function Dropdown(props) {
   const [abrirDropdown, setAbrirDropdown] = useState(false);
   const [selected, setSelected] = useState(props.multoptions ? [] : '');
 
@@ -28,14 +35,14 @@ export default function DropdownLocal(props) {
   }
 
   return (
-    <div className={styles.formFlexContainer}>
-      <div className={`${styles.Container} ${styles.Dropdown} ${abrirDropdown ? styles.open : ''}`}>
-        <button className={styles.dropdownButton} type="button" onClick={ToggleDropdown}>
+    <div id = {props.id} className={styles.formFlexContainer}>
+      <div  className={`${styles.Container} ${styles.Dropdown} ${abrirDropdown ? styles.open : ''}`}>
+        <button className={styles.dropdownButton} style = {{...props.style}} type="button" onClick={ToggleDropdown}>
           {selected !== '' ? selected : props.title}
         </button>
 
         {abrirDropdown && (
-          <ul className={styles.zindexma}>
+          <ul style={{ zIndex: abrirDropdown ? 1000 : 1 }}>
             {props.options.map((item, index) => (
                 <li key={index} onClick={() => SelectItem(item)}>
                   {item} {props.multoptions && selected.includes(item) ? '✓' : ''}

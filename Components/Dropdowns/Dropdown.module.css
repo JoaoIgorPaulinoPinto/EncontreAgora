@@ -7,16 +7,13 @@
   width: fit-content;
   margin: 5px;
   color: #1A1C1E;
-}
 
-.Dropdown.active {
-  z-index: 999;
 }
 
 .dropdown-button {
-  position: relative;
-  padding-right: 25px;
-  color: #1A1C1E;
+    position: relative;
+    padding-right: 25px;
+    color: #1A1C1E;
 }
 
 .dropdown-button::after {
@@ -44,7 +41,9 @@
 .Dropdown button {
   color: #1A1C1E;
   padding: 6px 10px;
-  width: 250px;
+  max-width: 250px;
+  min-width: 150px;
+  width: fit-content;
   text-align: left;
 }
 
@@ -52,15 +51,19 @@
   position: absolute;
   top: 100%;
   left: 0;
-  right: 0;
   display: none;
   max-height: 200px;
   overflow-y: auto;
   list-style: none;
-  margin: 0;
   padding: 6px;
+  margin: 5px 0 0 0;
   border-radius: 10px;
-  margin: 5px;
+  min-width: 100%; /* ✅ ADICIONADO: para acompanhar a largura do botão */
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+  backdrop-filter: blur(50px);
+  z-index: 9999; 
 }
 
 .Dropdown:hover ul,

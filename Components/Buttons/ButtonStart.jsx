@@ -1,7 +1,8 @@
 'use client'
 
 import { useRouter } from 'next/navigation';
-
+import { styleText } from 'util';
+import Styles from './ButtonStart.module.css'; // Importando o CSS do botão
 export default function ButtonStart(props) {
   const router = useRouter();
 
@@ -12,7 +13,7 @@ export default function ButtonStart(props) {
   }
 
   return (
-    <button className={props.className} id={props.id} onClick={handleClick}>
+    <button className={Styles.ButtonStart} id={props.id} onClick={handleClick}>
       {props.children}
     </button>
   );

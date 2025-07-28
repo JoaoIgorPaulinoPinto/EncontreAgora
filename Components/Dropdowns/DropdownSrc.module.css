@@ -1,0 +1,112 @@
+.formFlexContainer {
+  display: flex;
+  flex-direction: row;
+  position: relative; /* necessário para posicionar o dropdown */
+  gap: 8px;
+  align-items: center;
+}
+
+.dropdownButton {
+  position: relative;
+  padding: 8px 30px 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  color: #1A1C1E;
+  user-select: none;
+  flex-shrink: 0;
+  border-radius: 100px  !important;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+}
+
+.dropdownArrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1A1C1E;
+  pointer-events: none;
+}
+
+.textbox-input {
+  font-size: 16px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  outline: none;
+  color: #1A1C1E;
+  background-color: white;
+  min-width: 150px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.Dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+  backdrop-filter: blur(50px);
+  z-index: 9999;
+  margin-top: 5px;
+  list-style: none;
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdownItem {
+  width: 90%;
+  padding: 8px 10px;
+  color: #1A1C1E;
+  cursor: pointer;
+  border-radius: 100px;
+  text-align: center;
+  user-select: none;
+}
+
+.dropdownItem:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E5E7EB;
+}
+
+.selectedItem {
+  font-weight: bold;
+  color: green;
+}
+
+/* Scrollbar */
+.Dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Dropdown::-webkit-scrollbar-thumb {
+  background-color: #1A1C1E;
+  border-radius: 10px;
+}
+
+/* Animação simples no hover do botão */
+.dropdownButton:hover {
+  animation: pulse 0.3s ease-out 1 forwards;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+}

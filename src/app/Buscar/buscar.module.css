@@ -9,17 +9,32 @@
 }
 
 .parentdiv{
-  width: 100%;
-  display: flow;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .filtros{
-
+    justify-content: row;
+    z-index: 1;
   flex-wrap: wrap;
   flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.chooseService{
+  justify-content: row;
+  z-index: 1;
+  flex-wrap: wrap;
   flex-direction: row;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
+
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #E5E7EB;
+  border-radius:10px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  padding: 0px 5px;
 }

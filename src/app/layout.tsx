@@ -13,11 +13,18 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
         <style>
           {`
             /* Oculta o overlay de desenvolvimento do Next.js */
             #__next-dev-overlay {
               display: none !important;
+            } 
+            
+            link{
+            color
+            : #fff;
             }
 
             /* Estilização do body */
