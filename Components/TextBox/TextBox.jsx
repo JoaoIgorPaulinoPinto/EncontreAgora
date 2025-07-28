@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from './TextBox.module.css';// aproveitando o mesmo CSS
 
-export default function TextBox(className = '') {
+export default function TextBox({ placeholder }) {
   const [text, setText] = useState('');
 
   function handleSubmit(e) {
@@ -11,15 +11,15 @@ export default function TextBox(className = '') {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={styles.Dropdown}>
+    <form onSubmit={handleSubmit} className={styles.form}>
       <input
         type="text"
         value={text}
-        placeholder="Digite algo..."
+        placeholder={placeholder}
         onChange={(e) => setText(e.target.value)}
         className={styles['textbox-input']}
       />
-      <button type="submit" className={styles['textbox-button']}>
+      <button  type="submit" className={styles['textbox-button']}>
         Enviar
       </button>
     </form>

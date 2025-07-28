@@ -16,11 +16,10 @@
   align-items: center;
 }
 .filtros{
-  width: 100%;
+
+  flex-wrap: wrap;
+  flex-direction: row;
   flex-direction: row;
   display: flex;
   justify-content: center;  
-}
-.textbox-button{
-    color: brown;
 }

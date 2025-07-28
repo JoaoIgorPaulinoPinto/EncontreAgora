@@ -1,10 +1,5 @@
 .textbox-input {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: left;
-  width: 250px;
+    width: 100%;
   margin: 5px;
   padding: 6px 10px;
 
@@ -42,6 +37,12 @@
 .textbox-button:hover {
   background-color: #fff;
   animation: pulse 0.3s ease-out 1 forwards;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
  @keyframes pulse {

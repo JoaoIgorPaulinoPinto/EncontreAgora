@@ -11,9 +11,16 @@ export default function Buscar() {
             <div className={styles.filtros}>
 
                 <Dropdown options={Servicos} title='Serviço'dropdowntype = 'servico'multoptions={false}/>
-               
-               
-                <TextBox  />
+
+                <div className={styles.text}>
+                    <TextBox  placeholder='Pesquisar serviço...'/>
+                </div>
+                <div>
+                    <Dropdown options={['Mais próximos', 'Mais baratos', 'Melhor avaliados', 'Mais Proximos']} title='Ordenar por' dropdowntype = 'ordenar' multoptions={false}/>
+                </div>
+                <div>
+                    <TextBox placeholder='Selecionar Local'/>
+                </div>
 
             </div>
            
