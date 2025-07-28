@@ -1,0 +1,26 @@
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.parentdiv{
+  width: 100%;
+  display: flow;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.filtros{
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;  
+}
+.textbox-button{
+    color: brown;
+}

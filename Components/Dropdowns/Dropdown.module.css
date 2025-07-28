@@ -1,0 +1,124 @@
+.Dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  width: fit-content;
+  margin: 5px;
+  color: #1A1C1E;
+}
+
+.Dropdown.active {
+  z-index: 999;
+}
+
+.dropdown-button {
+  position: relative;
+  padding-right: 25px;
+  color: #1A1C1E;
+}
+
+.dropdown-button::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-top-color: #1A1C1E;
+}
+
+
+.Dropdown button,
+.Dropdown input[type="text"],
+.Dropdown ul {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #E5E7EB;
+  border-radius: 100px;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+
+.Dropdown button {
+  color: #1A1C1E;
+  padding: 6px 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.Dropdown ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.Dropdown:hover ul,
+.Dropdown:focus-within ul {
+  display: block;
+}
+
+.Dropdown ul {
+  display: none;
+}
+
+.Dropdown.active ul {
+  display: block;
+}
+
+.Dropdown li {
+  display: block;
+  padding: 8px 10px;
+  color: #1A1C1E;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Dropdown li:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #E5E7EB;
+ 
+}
+
+.Dropdown input[type="text"] {
+  padding: 6px;
+  margin-bottom: 5px;
+  color: #1A1C1E;
+  width: 300px;
+  border-radius: 100px;
+}
+
+/* Scrollbar */
+.Dropdown ul::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+.Dropdown ul::-webkit-scrollbar-thumb {
+  background-color: #1A1C1E;
+  border-radius: 10px;
+}
+.Dropdown Button:hover {
+  animation: pulse 0.3s ease-out 1 forwards;
+}
+
+ @keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+}
