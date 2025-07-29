@@ -29,7 +29,7 @@ export default function DropdownSrc(props) {
         props.options.filter(opt => opt.toLowerCase().includes(lowerText))
       );
     }
-    setAbrirDropdown(true);
+    setAbrirDropdown(false);
   }, [text, props.options]);
 
   function ToggleDropdown() {
@@ -45,7 +45,7 @@ export default function DropdownSrc(props) {
       }
     } else {
       setSelected(item);
-      setText(item);
+      setText('');
       setAbrirDropdown(false);
     }
   }
@@ -67,7 +67,6 @@ export default function DropdownSrc(props) {
       id={props.id}
       className={styles.formFlexContainer}
       ref={containerRef}
-      style={{ gap: '8px', alignItems: 'center' }}
     >
       <button
         className={styles.dropdownButton}

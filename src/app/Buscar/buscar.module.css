@@ -1,40 +1,38 @@
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
   }
   100% {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
 
-.parentdiv{
+.parentdiv {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.filtros{
-    justify-content: row;
-    z-index: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-}
-.chooseService{
-  justify-content: row;
-  z-index: 1;
-  flex-wrap: wrap;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
 
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #E5E7EB;
-  border-radius:10px;
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  padding: 0px 5px;
+.listFiltros,
+.chooseService,
+.selectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.selectionContainer{
+  margin-bottom: 20px;
+}
+.chooseService {
+  z-index: 2;
+}
+
+.listFiltros {
+  z-index: 1;
+}
+
+.chooselocation {
+  z-index: 1;
 }

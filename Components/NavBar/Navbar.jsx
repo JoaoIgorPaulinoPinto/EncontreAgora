@@ -19,7 +19,7 @@ export default function CustomNavbar() {
       sticky="top"
     >
       <Container fluid className='${styles.container}'>
-        <Navbar.Brand className={styles.brand}>ServiceHub</Navbar.Brand>
+        <Navbar.Brand className={styles.brand}>EncontreAgora</Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarNav"
           onClick={() => setExpanded((exp) => !exp)}

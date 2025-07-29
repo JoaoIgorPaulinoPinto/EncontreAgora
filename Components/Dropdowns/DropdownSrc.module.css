@@ -1,24 +1,29 @@
 .formFlexContainer {
   display: flex;
   flex-direction: row;
-  position: relative; /* necessário para posicionar o dropdown */
-  gap: 8px;
+  position: relative;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .dropdownButton {
+
   position: relative;
-  padding: 8px 30px 8px 10px;
-  font-size: 16px;
+  padding: 6px 20px 6px 20px; /* menor */
+
+  font-size: 14px; /* menor */
   cursor: pointer;
-  border: 1px solid #ccc;
   color: #1A1C1E;
-  user-select: none;
-  flex-shrink: 0;
-  border-radius: 100px  !important;
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid #E5E7EB;
+  border-radius: 100px 0px 0px 100px !important;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08); /* mais leve */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 .dropdownArrow {
@@ -32,53 +37,59 @@
 }
 
 .textbox-input {
-  font-size: 16px;
-  padding: 8px 10px;
-  border: 1px solid #ccc;
+  margin-left: 2px;
+  font-size: 14px;
+  padding: 6px 0px; /* menor */
+  border-radius: 0px 100px 100px 0px !important;
+  margin-right: 5px;
+  min-width: 30px; /* reduzido */
   flex-grow: 1;
   outline: none;
   color: #1A1C1E;
-  background-color: white;
-  min-width: 150px;
-  border-radius: 100px;
-  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 .Dropdown {
+    z-index: 9999;
   position: absolute;
   top: 100%;
   left: 0;
-  max-height: 200px;
+  max-height: 160px; /* menor */
   overflow-y: auto;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   border: 1px solid #E5E7EB;
   backdrop-filter: blur(50px);
-  z-index: 9999;
-  margin-top: 5px;
   list-style: none;
-  padding: 6px 0;
+  padding: 4px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+
 }
+
+
 
 .dropdownItem {
   width: 90%;
-  padding: 8px 10px;
+  padding: 6px 10px; /* menor */
+  font-size: 14px;
   color: #1A1C1E;
   cursor: pointer;
   border-radius: 100px;
-  text-align: center;
+  text-align: center;z-index: 1000;
   user-select: none;
 }
 
 .dropdownItem:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-    background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   border: 1px solid #E5E7EB;
 }
 
@@ -87,9 +98,8 @@
   color: green;
 }
 
-/* Scrollbar */
 .Dropdown::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .Dropdown::-webkit-scrollbar-thumb {
@@ -97,7 +107,6 @@
   border-radius: 10px;
 }
 
-/* Animação simples no hover do botão */
 .dropdownButton:hover {
   animation: pulse 0.3s ease-out 1 forwards;
 }
@@ -107,6 +116,6 @@
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* menor */
   }
 }

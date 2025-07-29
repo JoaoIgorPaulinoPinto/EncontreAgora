@@ -1,0 +1,9 @@
+.Map{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+/* 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 chave google api */
