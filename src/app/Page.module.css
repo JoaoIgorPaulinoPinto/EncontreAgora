@@ -1,14 +1,14 @@
-
 .container {
-    background-size:auto;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+  background-size: auto;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .centralizador {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* ocupa toda altura visível */
+  height: 100vh;
+  /* ocupa toda altura visível */
 }

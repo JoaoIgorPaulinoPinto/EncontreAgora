@@ -9,7 +9,7 @@
 .dropdownButton {
 
   position: relative;
-  padding: 6px 20px 6px 20px; /* menor */
+  padding: 6px 30px 6px 20px; /* menor */
 
   font-size: 14px; /* menor */
   cursor: pointer;
@@ -20,7 +20,8 @@
 
   border: 1px solid #E5E7EB;
   border-radius: 100px 0px 0px 100px !important;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08); /* mais leve */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
@@ -40,6 +41,7 @@
   margin-left: 2px;
   font-size: 14px;
   padding: 6px 0px; /* menor */
+  padding-left: 4px;
   border-radius: 0px 100px 100px 0px !important;
   margin-right: 5px;
   min-width: 30px; /* reduzido */
@@ -48,7 +50,9 @@
   color: #1A1C1E;
   background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #E5E7EB;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
 }

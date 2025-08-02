@@ -18,7 +18,7 @@ export default function CustomNavbar() {
       className={`${styles.navbar}`} // estilo do módulo CSS
       sticky="top"
     >
-      <Container fluid className='${styles.container}'>
+      <Container fluid className= {styles.container}>
         <Navbar.Brand className={styles.brand}>EncontreAgora</Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarNav"
@@ -29,6 +29,7 @@ export default function CustomNavbar() {
           <Nav className="me-auto">
             <button className={styles.link} onClick={() => handleClick('#')}>Home</button>
             <button className={styles.link} onClick={() => handleClick('Buscar')}>Buscar</button>
+            <button className={styles.link} onClick={() => handleClick('Perfil')}>Perfil</button>
             {/* <button className={styles.link} onClick={() => handleClick('Configuracoes')}>Configurações</button> */}
             <button disabled className={styles.disabled}>Disabled</button>
           </Nav>

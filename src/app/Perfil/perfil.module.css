@@ -1,0 +1,18 @@
+.card {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    align-self: center;
+    flex-direction: column;
+}

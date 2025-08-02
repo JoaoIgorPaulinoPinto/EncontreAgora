@@ -29,8 +29,7 @@ export default function DropdownSrc(props) {
         props.options.filter(opt => opt.toLowerCase().includes(lowerText))
       );
     }
-    setAbrirDropdown(false);
-  }, [text, props.options]);
+    }, [text, props.options]);
 
   function ToggleDropdown() {
     setAbrirDropdown(!abrirDropdown);

@@ -1,0 +1,12 @@
+.Avatar{
+    width: 100px;
+    background-color: rgb(134, 134, 134);
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+.Avatar img{
+    width: 80px;
+}

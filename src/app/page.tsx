@@ -1,8 +1,8 @@
 import Dropdown from '../../Components/Dropdowns/Dropdown'
-import ButtonStart from '../../Components/Buttons/ButtonStart.jsx'
+import ButtonStart from '../../Components/AppStartButton/ButtonStart.jsx'
 import styles from './Page.module.css'
 
-export default function Home() {
+export default function App() {
     return (
         <div className={styles.container}>
             {/* <Dropdown cidades={cidades} /> */}

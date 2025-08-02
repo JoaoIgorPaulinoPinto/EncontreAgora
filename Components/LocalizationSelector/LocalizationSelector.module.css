@@ -1,0 +1,73 @@
+.locationFilter {
+  margin: 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;  
+  position: relative;
+  align-items: center;
+}
+
+.locationFilter button {
+  border-radius: 100px 0 0 100px !important;
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  outline: none;
+  color: #1A1C1E;
+  width: 40px;
+  height: 35px;
+
+    border: 1px solid #E5E7EB;
+  border-radius: 100px 0px 0px 100px !important;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+.locationFilter_input {
+  display: flex;
+  align-items: center;
+  border-radius: 0 100px 100px 0 !important;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 35px;
+  margin-left: 2px  ;
+  padding: 8px;
+  padding-top: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #E5E7EB;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.locationFilter_input span {
+  font-size: 23px;
+  margin-right: 6px;
+  color: #1A1C1E;
+}
+
+.locationFilter_input input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1A1C1E;
+  background: transparent;
+  width: 40px;
+}
+.button:hover{
+  animation: pulse 0.3s ease-out 1 forwards;
+  
+}
+
+.Button span {
+  align-self: center;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
