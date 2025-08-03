@@ -4,12 +4,14 @@ export const metadata = {
   title: "Encontre Agora",
   description: "Qualquer serviço, a qualquer hora, em qualquer lugar.",
 };
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="pt-br">
       <head>

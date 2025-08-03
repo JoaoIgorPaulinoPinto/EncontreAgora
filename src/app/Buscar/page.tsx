@@ -1,17 +1,19 @@
-
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import TextBox from '../../../Components/TextBox/TextBox.jsx';
 import DropdownSrc from '../../../Components/Dropdowns/DropdownSrc.jsx';
 import Dropdown from '../../../Components/Dropdowns/Dropdown.jsx';
 import styles from './buscar.module.css';
+import servicosData from '../../../Log/Servicos.json';
 import LocalizationSelector from '../../../Components/LocalizationSelector/LocalizationSelector';
-
+interface Servico {
+  nome: string;
+}
 export default function Buscar() {
-  const Servicos = [
-    'Cabelerereiro', 'Pintor', 'Lava Rápida',
-    'Eletricista', 'Pedreiro', 'Encanador', 'Mecânico'
-  ];
-
+  const servicos = servicosData as { nome: string }[];
+  const servicosNomes = servicos.map(s => s.nome);
+  const [filter, SetFilter] = useState('');
+  const [endereco, SetEndereco] = useState('')
 
   return (
     <div className={styles.parentdiv}>
@@ -19,14 +21,15 @@ export default function Buscar() {
         <div className={styles.chooseService}>
           <DropdownSrc
             id={1}
-            options={Servicos}
+            options={servicosNomes}
             title='Serviço'
             dropdowntype='servico'
             multoptions={false}
+            onChange={(value) => SetFilter(value.toString())}
           />
         </div>
         <div className={styles.chooseLocation}>
-          <LocalizationSelector />
+          <LocalizationSelector onEnderecoSelecionado={(value) => { SetEndereco(value); }} />
         </div>
       </div>
 
@@ -37,8 +40,16 @@ export default function Buscar() {
           title='Ordenar por'
           dropdowntype='ordenar'
           multoptions={false}
+          onChange={(value) => SetFilter(value.toString())}
         />
       </div>
+
+      <h1>
+        {filter}
+      </h1>
+      <h1>
+        {endereco}
+      </h1>
     </div>
   );
 }

@@ -8,11 +8,11 @@ import React, {
 } from 'react';
 import maplibregl from 'maplibre-gl';
 import '@maptiler/sdk/dist/maptiler-sdk.css';
-import * as maptilersdk from '@maptiler/sdk';
-import styles from '../Map/MapSelector.module.css';
+import styles from './MapSelector.module.css';
+
 
 interface MapSelectorProps {
-  OnClicked: (lng: number, lat: number) => void;
+  OnClicked: (endereco: string) => void;
   showMap: boolean;
   onCloseMap: () => void;
 }
@@ -25,7 +25,7 @@ const MapSelector = forwardRef(function MapSelector(
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const [map, setMap] = useState<maplibregl.Map | null>(null);
   const [marker, setMarker] = useState<maplibregl.Marker | null>(null);
-
+  const [enederco, SetEndereco] = useState('');
 
   useImperativeHandle(ref, () => ({
     value: localSelecionado,
@@ -54,24 +54,25 @@ const MapSelector = forwardRef(function MapSelector(
 
       setMarker(newMarker);
       setLocalSelecionado({ lng, lat });
-      OnClicked(lng, lat);
 
       fetch(`/api/geocode?lat=${lat}&lng=${lng}`)
         .then((res) => res.json())
         .then((data) => {
+          const endereco = data.results?.[0]?.formatted;
           console.log('Dados da API:', data);
+          SetEndereco(data); // se quiser guardar o dado para outro uso
+          OnClicked(endereco); // usando diretamente o campo retornado
         })
         .catch((err) => {
           console.error('Erro ao buscar localização:', err);
         });
     });
-
     setMap(mapInstance);
 
     return () => {
       mapInstance.remove();
     };
-  }, [map, marker, OnClicked]);
+  }, [showMap]);
 
   return showMap ? (
     <div className={styles.MapWrapper}>

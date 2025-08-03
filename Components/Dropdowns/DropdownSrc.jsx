@@ -9,7 +9,8 @@ import styles from './DropdownSrc.module.css';
  *   options: string[],
  *   title: string,
  *   dropdowntype?: string,
- *   multoptions?: boolean
+ *   multoptions?: boolean,
+ *   onChange?: (value: string | string[]) => void
  * }} props
  */
 export default function DropdownSrc(props) {
@@ -43,6 +44,9 @@ export default function DropdownSrc(props) {
         setSelected(selected.filter(i => i !== item));
       }
     } else {
+      if (props.onChange) {
+        props.onChange(item); // envia o valor para o componente pai
+      }
       setSelected(item);
       setText('');
       setAbrirDropdown(false);

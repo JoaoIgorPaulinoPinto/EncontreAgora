@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Navbar.module.css';
 import { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 import { useRouter } from 'next/navigation';
 
 export default function CustomNavbar() {

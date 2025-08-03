@@ -1,0 +1,270 @@
+[
+    {
+        "contratante": "João Pedro de Arruda Gomes",
+        "empresa": "Beleza Tietê",
+        "endereco": "Rua Floriano Peixoto 123, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Cabeleireiro",
+            "Manicure",
+            "Esteticista"
+        ]
+    },
+    {
+        "contratante": "Mariana Silva Costa",
+        "empresa": "Mãos de Ouro",
+        "endereco": "Avenida Brasil 45, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Manicure",
+            "Pedreiro",
+            "Pintor",
+            "Eletricista"
+        ]
+    },
+    {
+        "contratante": "Carlos Eduardo Martins",
+        "empresa": "Construtora Martins",
+        "endereco": "Rua José Bonifácio 78, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Pedreiro",
+            "Eletricista",
+            "Encanador"
+        ]
+    },
+    {
+        "contratante": "Fernanda Alves Ribeiro",
+        "empresa": "Estética Bella",
+        "endereco": "Rua São Paulo 210, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Esteticista",
+            "Manicure",
+            "Cabeleireiro"
+        ]
+    },
+    {
+        "contratante": "Paulo Henrique Souza",
+        "empresa": "Tecno Assistência",
+        "endereco": "Rua das Palmeiras 39, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Técnico de informática",
+            "Eletricista"
+        ]
+    },
+    {
+        "contratante": "Letícia Ramos Dias",
+        "empresa": "Jardins & Cia",
+        "endereco": "Avenida Brasil 321, Povo Feliz, Tietê - SP, 18530-020, Brazil",
+        "servicos": [
+            "Jardineiro",
+            "Pedreiro"
+        ]
+    },
+    {
+        "contratante": "Ricardo Lopes Ferreira",
+        "empresa": "Auto Rápido Tietê",
+        "endereco": "Rua São Sebastião 67, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Lavador de carros",
+            "Mecânico"
+        ]
+    },
+    {
+        "contratante": "Ana Carolina Moreira",
+        "empresa": "Cuidado e Carinho",
+        "endereco": "Rua Padre Anchieta 150, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Babá",
+            "Cuidador de idosos"
+        ]
+    },
+    {
+        "contratante": "Marcelo Souza Pereira",
+        "empresa": "Segurança Total",
+        "endereco": "Rua Dom Pedro II 98, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Segurança / Vigilante"
+        ]
+    },
+    {
+        "contratante": "Juliana Martins Lima",
+        "empresa": "FotoFlash",
+        "endereco": "Avenida das Acácias 77, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Fotógrafo"
+        ]
+    },
+    {
+        "contratante": "Eduardo Nascimento Costa",
+        "empresa": "Pronto Chaveiro",
+        "endereco": "Rua São João 45, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Chaveiro"
+        ]
+    },
+    {
+        "contratante": "Camila Rodrigues Alves",
+        "empresa": "Marcenaria Forte",
+        "endereco": "Rua das Flores 98, Povo Feliz, Tietê - SP, 18530-020, Brazil",
+        "servicos": [
+            "Marceneiro"
+        ]
+    },
+    {
+        "contratante": "Lucas Almeida Santos",
+        "empresa": "Personal Fit",
+        "endereco": "Rua José Bonifácio 120, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Personal trainer"
+        ]
+    },
+    {
+        "contratante": "Patrícia Gomes Vieira",
+        "empresa": "Eletricidade Fácil",
+        "endereco": "Rua São Sebastião 140, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Eletricista"
+        ]
+    },
+    {
+        "contratante": "Roberto Dias Ferreira",
+        "empresa": "Casa do Encanador",
+        "endereco": "Rua das Palmeiras 15, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Encanador",
+            "Pedreiro"
+        ]
+    },
+    {
+        "contratante": "Sofia Lima Rocha",
+        "empresa": "Beleza Natural",
+        "endereco": "Avenida Brasil 200, Povo Feliz, Tietê - SP, 18530-020, Brazil",
+        "servicos": [
+            "Cabeleireiro",
+            "Manicure",
+            "Esteticista"
+        ]
+    },
+    {
+        "contratante": "Thiago Carvalho Moreira",
+        "empresa": "Mecânica Prime",
+        "endereco": "Rua Padre Anchieta 88, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Mecânico"
+        ]
+    },
+    {
+        "contratante": "Daniela Santos Oliveira",
+        "empresa": "Consultoria Técnica",
+        "endereco": "Rua São Paulo 67, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Técnico de informática"
+        ]
+    },
+    {
+        "contratante": "Bruno Almeida Ribeiro",
+        "empresa": "Pinturas & Reformas",
+        "endereco": "Rua das Acácias 55, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Pintor",
+            "Pedreiro"
+        ]
+    },
+    {
+        "contratante": "Larissa Costa Ferreira",
+        "empresa": "Manicure & Cia",
+        "endereco": "Rua Floriano Peixoto 87, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Manicure"
+        ]
+    },
+    {
+        "contratante": "Felipe Souza Mendes",
+        "empresa": "Auto Lavagem Tietê",
+        "endereco": "Avenida Brasil 10, Povo Feliz, Tietê - SP, 18530-020, Brazil",
+        "servicos": [
+            "Lavador de carros"
+        ]
+    },
+    {
+        "contratante": "Juliana Martins Lima",
+        "empresa": "Estética Bela Pele",
+        "endereco": "Rua São João 33, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Esteticista"
+        ]
+    },
+    {
+        "contratante": "Ricardo Alves Mendes",
+        "empresa": "Cuida Bem",
+        "endereco": "Rua São Sebastião 5, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Cuidador de idosos",
+            "Babá"
+        ]
+    },
+    {
+        "contratante": "Paula Lima Barbosa",
+        "empresa": "Beleza & Cabelo",
+        "endereco": "Rua José Bonifácio 89, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Cabeleireiro"
+        ]
+    },
+    {
+        "contratante": "Vinícius Rocha Oliveira",
+        "empresa": "Técnicos Tietê",
+        "endereco": "Rua das Palmeiras 99, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Técnico de informática",
+            "Eletricista"
+        ]
+    },
+    {
+        "contratante": "Isabela Martins Pereira",
+        "empresa": "Chaveiro Rápido",
+        "endereco": "Rua Floriano Peixoto 120, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Chaveiro"
+        ]
+    },
+    {
+        "contratante": "Eduardo Souza Lima",
+        "empresa": "Jardins & Flores",
+        "endereco": "Rua Padre Anchieta 200, Povo Feliz, Tietê - SP, 18530-020, Brazil",
+        "servicos": [
+            "Jardineiro"
+        ]
+    },
+    {
+        "contratante": "Carla Mendes Barbosa",
+        "empresa": "Segurança Forte",
+        "endereco": "Rua São Paulo 9, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Segurança / Vigilante"
+        ]
+    },
+    {
+        "contratante": "Lucas Almeida Santos",
+        "empresa": "Personal Trainer Pro",
+        "endereco": "Avenida Brasil 77, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "servicos": [
+            "Personal trainer"
+        ]
+    },
+    {
+        "contratante": "Fernanda Lima Moreira",
+        "empresa": "Marcenaria Moderna",
+        "endereco": "Rua das Flores 150, Centro, Tietê - SP, 18530-000, Brazil",
+        "servicos": [
+            "Marceneiro"
+        ]
+    },
+    {
+        "contratante": "Gustavo Ribeiro Santos",
+        "empresa": "Cabelos & Estilo",
+        "endereco": "Rua José Bonifácio 200, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "servicos": [
+            "Cabeleireiro",
+            "Manicure"
+        ]
+    }
+]
