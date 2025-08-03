@@ -1,62 +1,85 @@
+/* 🎨 Paleta aplicada:
+   - Bordas: #EBD107
+   - Hover e Clickeds: #EB0721
+   - Texto: #FFF
+   - Fundo de inputs: #FFF
+   - Fundo de botões e dropdowns: #EB5F07
+*/
+.distanceIcon {
+  width: 30px;
+}
+
 .locationFilter {
   margin: 10px;
   width: fit-content;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
   position: relative;
   align-items: center;
+  font-family: "Inter", "Roboto", "SF Pro Display", sans-serif;
 }
 
 .locationFilter button {
   border-radius: 100px 0 0 100px !important;
   font-size: 14px;
   padding: 6px 8px;
-  border: 1px solid #ccc;
   flex-grow: 1;
   outline: none;
-  color: #1A1C1E;
   width: 40px;
   height: 35px;
-
-    border: 1px solid #E5E7EB;
-  border-radius: 100px 0px 0px 100px !important;
- box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: #EB5F07;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
+
+.locationFilter button:hover {
+
+  animation: pulse 0.3s ease-out 1 forwards;
+}
+
 .locationFilter_input {
   display: flex;
   align-items: center;
   border-radius: 0 100px 100px 0 !important;
-  background-color: rgba(255, 255, 255, 0.7);
   height: 35px;
-  margin-left: 2px  ;
+  width: 110px;
+  margin-left: 2px;
   padding: 8px;
-  padding-top: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  border: 1px solid #E5E7EB;
+  border-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
+  font-family: "Inter", "Roboto", "SF Pro Display", sans-serif;
+  color: #1A1C1E;
+  background-color: #fff;
 }
 
 .locationFilter_input span {
   font-size: 23px;
-  margin-right: 6px;
+  margin-right: 5px;
   color: #1A1C1E;
 }
 
 .locationFilter_input input {
+  width: 90%;
   border: none;
   outline: none;
   font-size: 14px;
   color: #1A1C1E;
   background: transparent;
-  width: 40px;
+  font-family: "Inter", "Roboto", "SF Pro Display", sans-serif;
 }
-.button:hover{
+
+.locationFilter_input input::placeholder {
+  color: #0000002d;
+}
+
+.button:hover {
   animation: pulse 0.3s ease-out 1 forwards;
-  
 }
 
 .Button span {
@@ -65,9 +88,12 @@
 
 @keyframes pulse {
   0% {
+    background-color: #eb5e07;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
+
   100% {
+    background-color: #ff8800;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }

@@ -1,10 +1,10 @@
-'use client';
+
 import React from 'react';
 import TextBox from '../../../Components/TextBox/TextBox.jsx';
 import DropdownSrc from '../../../Components/Dropdowns/DropdownSrc.jsx';
 import Dropdown from '../../../Components/Dropdowns/Dropdown.jsx';
 import styles from './buscar.module.css';
-import SelectLocalization from '../../../Components/LocalizationSelector/LocalizationSelector';
+import LocalizationSelector from '../../../Components/LocalizationSelector/LocalizationSelector';
 
 export default function Buscar() {
   const Servicos = [
@@ -26,7 +26,7 @@ export default function Buscar() {
           />
         </div>
         <div className={styles.chooseLocation}>
-          <SelectLocalization />
+          <LocalizationSelector />
         </div>
       </div>
 
@@ -38,10 +38,6 @@ export default function Buscar() {
           dropdowntype='ordenar'
           multoptions={false}
         />
-
-
-
-
       </div>
     </div>
   );

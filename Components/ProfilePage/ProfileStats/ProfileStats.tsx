@@ -1,13 +1,13 @@
-export default function ProfileStats(){
-return(
+export default function ProfileStats() {
+    return (
 
-    <div>
+        <div>
 
-        <div> seguidores:100</div>
-        <div> seguidores:100</div>
-        <div> seguidores:100</div>
+            <div> seguidores:100</div>
+            <div> seguidores:100</div>
+            <div> seguidores:100</div>
 
-    </div>
+        </div>
 
-)
+    )
 }

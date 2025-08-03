@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './Navbar.module.css';
 import { useState } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { useRouter } from 'next/navigation';
 
 export default function CustomNavbar() {
   const [expanded, setExpanded] = useState(false);
   const router = useRouter();
-  const handleClick = (rota) => {router.push(`/${rota}`); setExpanded(false);};
+  const handleClick = (rota) => { router.push(`/${rota}`); setExpanded(false); };
 
   return (
     <Navbar
@@ -18,7 +19,7 @@ export default function CustomNavbar() {
       className={`${styles.navbar}`} // estilo do módulo CSS
       sticky="top"
     >
-      <Container fluid className= {styles.container}>
+      <Container fluid className={styles.container}>
         <Navbar.Brand className={styles.brand}>EncontreAgora</Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarNav"
@@ -30,7 +31,6 @@ export default function CustomNavbar() {
             <button className={styles.link} onClick={() => handleClick('#')}>Home</button>
             <button className={styles.link} onClick={() => handleClick('Buscar')}>Buscar</button>
             <button className={styles.link} onClick={() => handleClick('Perfil')}>Perfil</button>
-            {/* <button className={styles.link} onClick={() => handleClick('Configuracoes')}>Configurações</button> */}
             <button disabled className={styles.disabled}>Disabled</button>
           </Nav>
         </Navbar.Collapse>

@@ -29,7 +29,7 @@ export default function DropdownSrc(props) {
         props.options.filter(opt => opt.toLowerCase().includes(lowerText))
       );
     }
-    }, [text, props.options]);
+  }, [text, props.options]);
 
   function ToggleDropdown() {
     setAbrirDropdown(!abrirDropdown);
@@ -67,6 +67,15 @@ export default function DropdownSrc(props) {
       className={styles.formFlexContainer}
       ref={containerRef}
     >
+      <input
+        type="text"
+        className={styles['textbox-input']}
+        placeholder="Pesquisar serviço..."
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        onFocus={() => setAbrirDropdown(true)}
+      />
+
       <button
         className={styles.dropdownButton}
         style={{ ...props.style }}
@@ -81,15 +90,6 @@ export default function DropdownSrc(props) {
         <span className={styles.dropdownArrow} />
       </button>
 
-      <input
-        type="text"
-        className={styles['textbox-input']}
-        placeholder="Pesquisar serviço..."
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        onFocus={() => setAbrirDropdown(true)}
-      />
-
       {abrirDropdown && filteredOptions.length > 0 && (
         <ul
           className={styles.Dropdown}
@@ -100,9 +100,8 @@ export default function DropdownSrc(props) {
               key={index}
               onClick={() => SelectItem(item)}
               onMouseDown={e => e.preventDefault()}
-              className={`${styles.dropdownItem} ${
-                props.multoptions && selected.includes(item) ? styles.selectedItem : ''
-              }`}
+              className={`${styles.dropdownItem} ${props.multoptions && selected.includes(item) ? styles.selectedItem : ''
+                }`}
             >
               {item} {props.multoptions && selected.includes(item) ? '✓' : ''}
             </li>

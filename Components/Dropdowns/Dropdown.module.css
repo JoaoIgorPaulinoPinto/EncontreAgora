@@ -11,9 +11,9 @@
 }
 
 .dropdown-button {
-    position: relative;
-    padding-right: 25px;
-    color: #1A1C1E;
+  position: relative;
+  padding-right: 25px;
+  color: #1A1C1E;
 }
 
 .dropdown-button::after {
@@ -58,13 +58,14 @@
   padding: 6px;
   margin: 5px 0 0 0;
   border-radius: 10px;
-  min-width: 100%; /* ✅ ADICIONADO: para acompanhar a largura do botão */
-  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 100%;
+  /* ✅ ADICIONADO: para acompanhar a largura do botão */
+  border-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 
-  border: 1px solid #E5E7EB;
+  border-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
-  z-index: 9999; 
+  z-index: 9999;
 }
 
 .Dropdown:hover ul,
@@ -90,9 +91,9 @@
 }
 
 .Dropdown li:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #E5E7EB;
- 
+  background-color: #EB5F07;
+  border-color: rgba(0, 0, 0, 0.1);
+
 }
 
 .Dropdown input[type="text"] {
@@ -110,19 +111,22 @@
 }
 
 .Dropdown ul::-webkit-scrollbar-thumb {
-  background-color: #1A1C1E;
+  background-color: #EB5F07;
   border-radius: 10px;
 }
+
 .Dropdown Button:hover {
   animation: pulse 0.3s ease-out 1 forwards;
 }
 
- @keyframes pulse {
+@keyframes pulse {
   0% {
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.0);
+    background-color: #eb5e07;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 
   100% {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    background-color: #ff8800;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }

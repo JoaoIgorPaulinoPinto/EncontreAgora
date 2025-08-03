@@ -1,6 +1,5 @@
 import Navbar from "../../Components/Navbar/Navbar.jsx";
 import Footer from "../../Components/footer/footer.jsx";
-import img from './13783.jpg'
 export const metadata = {
   title: "Encontre Agora",
   description: "Qualquer serviço, a qualquer hora, em qualquer lugar.",
@@ -19,21 +18,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <style>{`
-          /* Oculta overlay de erro do dev */
-
           body {
 
             margin: 0;
             padding: 0;
             min-height: 100vh;
             font-family: sans-serif;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: block;
-            align-items: center;
-            background-image: url('./13783.jpg');
-
+            background-color:#fff8ff;
           }
 
           footer {
@@ -43,11 +34,7 @@ export default function RootLayout({
             padding: 10px 0;
             margin-top: auto;
           }
-          .content{
-          position: relative;
-          z-index: 0;
-          margin-top: 100;
-          }
+
         `}</style>
       </head>
 
@@ -56,13 +43,11 @@ export default function RootLayout({
 
         <Navbar />
 
-
-        <div className="content"> {children} </div>
+        {children}
 
 
         <footer><Footer /></footer>
 
-        
       </body>
     </html>
   );
