@@ -1,29 +1,33 @@
 .Map {
-
-  border-radius: 0 0 50px 50px;
+  border-radius: 50px;
   width: 300px;
   height: 300px;
-  border: 2px;
-  border-style: dashed;
-  border-color: #EB5F07;
+  border: 2px dashed #EB5F07;
   display: flex;
+  z-index: 1000;
   flex-direction: row;
 }
 
+.Overlay {
+  position: fixed;
+  /* fixado em relação à janela */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  /* abaixo do mapa */
+  cursor: pointer;
+}
+
 .MapWrapper {
-  z-index: 1000;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 999;
+  /* acima da overlay */
+  width: auto;
+  height: auto;
 }
-
-.Map button {
-  border-radius: 100% !important;
-}
-
-.FecharMapa {
-  border-radius: 100% !important;
-}
-
-/* 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 chave google api */

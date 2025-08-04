@@ -22,11 +22,12 @@ export default function LocalizacaoPage({ onEnderecoSelecionado }: LocalizacaoPa
     <div>
       <div className={styles.locationFilter}>
         <button
-          className={styles.button}
-          aria-label="Mostrar mapa"
+          className={styles.localizationButton}
+          aria-label='Localização'
           onClick={() => setMostrarMapa(true)}
         >
           <span className="material-symbols-outlined">distance</span>
+          <label>Localização</label>
         </button>
 
         {mostrarMapa && (
@@ -37,7 +38,9 @@ export default function LocalizacaoPage({ onEnderecoSelecionado }: LocalizacaoPa
               setEnderecoSelecionado(value);
               console.log("Endereço selecionado: " + enderecoSelecionado);
             }}
+
           />
+
         )}
 
         <div className={styles.locationFilter_input}>
@@ -49,7 +52,8 @@ export default function LocalizacaoPage({ onEnderecoSelecionado }: LocalizacaoPa
           <img
             className={styles.distanceIcon}
             src="/iconDistance.png"
-            alt="Distância de busca"
+            alt="Distância de busc
+            a"
           />
         </div>
       </div>

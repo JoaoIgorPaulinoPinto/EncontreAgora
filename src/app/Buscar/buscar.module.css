@@ -13,7 +13,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
   margin-top: 80px;
 }
 
@@ -42,4 +41,11 @@
 .chooselocation {
   z-index: 1;
   margin: 10px;
+}
+
+.listagem {
+  background-color: rgba(0, 0, 0, 0.132);
+  border-radius: 10px;
+
+  margin: 30px
 }

@@ -6,6 +6,8 @@ import Dropdown from '../../../Components/Dropdowns/Dropdown.jsx';
 import styles from './buscar.module.css';
 import servicosData from '../../../Log/Servicos.json';
 import LocalizationSelector from '../../../Components/LocalizationSelector/LocalizationSelector';
+import ClientList from '../../../Components/List/List';
+
 interface Servico {
   nome: string;
 }
@@ -13,6 +15,7 @@ export default function Buscar() {
   const servicos = servicosData as { nome: string }[];
   const servicosNomes = servicos.map(s => s.nome);
   const [filter, SetFilter] = useState('');
+  const [listfilter, SetListFilter] = useState('');
   const [endereco, SetEndereco] = useState('')
 
   return (
@@ -33,23 +36,23 @@ export default function Buscar() {
         </div>
       </div>
 
-      <div className={styles.listFiltros}>
-        <DropdownSrc
-          id={1}
-          options={['Mais próximos', 'Mais baratos', 'Melhor avaliados']}
-          title='Ordenar por'
-          dropdowntype='ordenar'
-          multoptions={false}
-          onChange={(value) => SetFilter(value.toString())}
-        />
+      <div className={styles.listagem}>
+        <div className={styles.listFiltros}>
+          <DropdownSrc
+            id={2}
+            options={['Mais próximos', 'Melhor avaliados']}
+            title='Ordenar por'
+            dropdowntype='ordenar'
+            multoptions={false}
+            onChange={(value) => SetListFilter(value.toString())}
+          />
+        </div>
+
+        <ClientList service={filter} order={listfilter} />
+
       </div>
 
-      <h1>
-        {filter}
-      </h1>
-      <h1>
-        {endereco}
-      </h1>
     </div>
+
   );
 }

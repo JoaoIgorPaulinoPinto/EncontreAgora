@@ -11,7 +11,7 @@
 
 .locationFilter {
   margin: 10px;
-  width: fit-content;
+  width: auto;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -19,13 +19,15 @@
   font-family: "Inter", "Roboto", "SF Pro Display", sans-serif;
 }
 
-.locationFilter button {
-  border-radius: 100px 0 0 100px !important;
+.localizationButton {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px 0 0 15px !important;
   font-size: 14px;
   padding: 6px 8px;
   flex-grow: 1;
   outline: none;
-  width: 40px;
+  width: 120px;
   height: 35px;
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -36,6 +38,11 @@
   transition: background-color 0.3s ease;
 }
 
+.locationFilter {
+  display: flex;
+  flex-direction: row;
+}
+
 .locationFilter button:hover {
 
   animation: pulse 0.3s ease-out 1 forwards;
@@ -44,7 +51,8 @@
 .locationFilter_input {
   display: flex;
   align-items: center;
-  border-radius: 0 100px 100px 0 !important;
+  border-radius: 0 15px 15px 0 !important;
+
   height: 35px;
   width: 110px;
   margin-left: 2px;
