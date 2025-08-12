@@ -8,24 +8,42 @@ interface Empresa {
     empresa: string;
     endereco: string;
     servicos: string[];
+    estrelas: number;
+    distancia_km: number;
 }
 
 interface ClientListProps {
     service: string;
-    order: string;
+    order?: string;
 }
 
-export default function ClientList({ service }: ClientListProps) {
-    const clients = (Clients as Empresa[]).filter(client =>
-        service
-            ? client.servicos.some(s =>
-                s.toLowerCase().includes(service.toLowerCase())
-            )
-            : true // se nenhum serviço for informado, mostra todos
+export default function ClientList({ order = "Melhor avaliados", service }: ClientListProps) {
+    const clients = (Clients as Empresa[])
+        .filter(client =>
+            service
+                ? client.servicos.some(s =>
+                    s.toLowerCase().includes(service.toLowerCase())
+                )
+                : true
+        )
+        .sort((a, b) => {
+            if (order === "Melhor avaliados") {
+                return b.estrelas - a.estrelas;
+            } else if (order === "Mais Próximos") {
+                return a.distancia_km - b.distancia_km;
+            } else {
+                // Se order for o nome da empresa, ordenar só pelo nome da empresa igual a order (colocar primeiro)
+                if (a.empresa === order && b.empresa !== order) return -1; // a vem antes
+                if (b.empresa === order && a.empresa !== order) return 1;  // b vem antes
+                return 0; // mantem ordem
+            }
+            return 0;
+        });
 
-        //ordenar com base no order * 
 
-    );
+    // retornar ou renderizar os clientes aqui
+
+
 
     return (
         <>
@@ -50,6 +68,8 @@ export default function ClientList({ service }: ClientListProps) {
                                         <span key={i}>{servico}</span>
                                     ))}
                                 </div>
+                                <h6>{item.estrelas}</h6>
+
                             </div>
                         </div>
                     </div>

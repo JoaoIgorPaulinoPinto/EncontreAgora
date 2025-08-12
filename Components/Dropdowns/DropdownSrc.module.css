@@ -26,10 +26,19 @@
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 0 15px 15px 0 !important;
 
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow suave laranja */
+  box-shadow: 0 4px 8px rgba(247, 138, 29, 0.15);
   background-color: #EB5F07;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  transition: box-shadow 0.3s ease;
+}
+
+.dropdownButton:hover,
+.dropdownButton:focus {
+  /* box-shadow um pouco mais forte ao hover/focus */
+  box-shadow: 0 6px 12px rgba(247, 138, 29, 0.3);
+  animation: pulse 0.3s ease-out 1 forwards;
 }
 
 .dropdownArrow {
@@ -48,16 +57,18 @@
   padding: 6px 0px;
   padding-left: 10px;
   border-radius: 100px 0px 0px 100px !important;
-  margin-right: 1px;
   min-width: 30px;
   flex-grow: 1;
   outline: none;
   color: #1A1C1E;
   background-color: #fff;
   border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  /* sombra suave preta translúcida */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  transition: box-shadow 0.3s ease;
 }
 
 .textbox-input::placeholder {
@@ -73,7 +84,10 @@
   overflow-y: auto;
   border-radius: 10px;
   background-color: #EB5F07;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+
+  /* sombra suave laranja */
+  box-shadow: 0 4px 8px rgba(247, 138, 29, 0.15);
+
   border-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
   list-style: none;
@@ -82,20 +96,25 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.Dropdown:hover,
+.Dropdown:focus-within {
+  /* sombra mais forte ao hover/focus */
+  box-shadow: 0 6px 12px rgba(247, 138, 29, 0.3);
 }
 
 .dropdownItem {
-  width: 90%;
+  width: 100%;
   padding: 6px 10px;
   font-size: 14px;
   color: #fff;
   cursor: pointer;
-  border-radius: 100px;
   text-align: center;
-  z-index: 1000;
   user-select: none;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  border: 2px solid transparent;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .dropdownItem:hover {
@@ -116,11 +135,6 @@
   border-radius: 10px;
 }
 
-.dropdownButton:hover {
-
-  animation: pulse 0.3s ease-out 1 forwards;
-}
-
 @keyframes pulse {
   0% {
     background-color: #eb5e07;
@@ -129,6 +143,6 @@
 
   100% {
     background-color: #ff8800;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(247, 138, 29, 0.6);
   }
 }

@@ -2,18 +2,32 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: left;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: fit-content;
   margin: 5px;
-  color: #1A1C1E;
-
+  color: #fff;
+  /* texto branco conforme paleta */
 }
 
 .dropdown-button {
   position: relative;
-  padding-right: 25px;
-  color: #1A1C1E;
+  padding: 4px 40px 4px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  /* texto branco */
+  background-color: #EB5F07;
+  /* fundo laranja */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 15px 15px 0 !important;
+  box-shadow: 0 4px 8px rgba(235, 95, 7, 0.15);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown-button::after {
@@ -23,100 +37,103 @@
   top: 50%;
   transform: translateY(-50%);
   border: 5px solid transparent;
-  border-top-color: #1A1C1E;
+  border-top-color: #fff;
+  pointer-events: none;
 }
 
+.dropdown-button:hover,
+.dropdown-button:focus {
+  box-shadow: 0 6px 12px rgba(235, 7, 33, 0.5);
+  animation: pulse 0.3s ease-out 1 forwards;
+}
 
 .Dropdown button,
 .Dropdown input[type="text"],
 .Dropdown ul {
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #E5E7EB;
+  background-color: #EB5F07;
+  box-shadow: 0 4px 8px rgba(235, 95, 7, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+  transition: box-shadow 0.3s ease;
+  color: #fff;
 }
 
-.Dropdown button {
-  color: #1A1C1E;
+.Dropdown input[type="text"] {
   padding: 6px 10px;
-  max-width: 250px;
-  min-width: 150px;
-  width: fit-content;
-  text-align: left;
+  margin-bottom: 5px;
+  width: 300px;
+  color: #1A1C1E;
+  /* texto escuro no input */
+  background-color: #fff;
+  /* fundo branco no input */
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.Dropdown input[type="text"]::placeholder {
+  color: #000000;
 }
 
 .Dropdown ul {
   position: absolute;
   top: 100%;
   left: 0;
-  display: none;
-  max-height: 200px;
+  max-height: 160px;
   overflow-y: auto;
   list-style: none;
-  padding: 6px;
+  padding: 4px 0;
   margin: 5px 0 0 0;
   border-radius: 10px;
   min-width: 100%;
-  /* ✅ ADICIONADO: para acompanhar a largura do botão */
-  border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 4px 8px rgba(235, 95, 7, 0.15);
   border-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
   z-index: 9999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
 }
 
 .Dropdown:hover ul,
-.Dropdown:focus-within ul {
-  display: block;
-}
-
-.Dropdown ul {
-  display: none;
-}
-
+.Dropdown:focus-within ul,
 .Dropdown.active ul {
-  display: block;
+  display: flex;
+  box-shadow: 0 6px 12px rgba(235, 7, 33, 0.5);
 }
 
 .Dropdown li {
   display: block;
   padding: 8px 10px;
-  color: #1A1C1E;
-  text-decoration: none;
+  color: #fff;
   cursor: pointer;
   border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  text-align: center;
+  user-select: none;
 }
 
 .Dropdown li:hover {
-  background-color: #EB5F07;
-  border-color: rgba(0, 0, 0, 0.1);
-
+  background-color: #EB0721;
+  box-shadow: 0 4px 12px rgba(235, 7, 33, 0.5);
+  transform: scale(1.05);
 }
 
-.Dropdown input[type="text"] {
-  padding: 6px;
-  margin-bottom: 5px;
-  color: #1A1C1E;
-  width: 300px;
-  border-radius: 100px;
+.selectedItem {
+  font-weight: bold;
+  color: #fff;
 }
 
-/* Scrollbar */
-.Dropdown ul::-webkit-scrollbar {
-  width: 8px;
-
+.Dropdown::-webkit-scrollbar {
+  width: 6px;
 }
 
-.Dropdown ul::-webkit-scrollbar-thumb {
-  background-color: #EB5F07;
+.Dropdown::-webkit-scrollbar-thumb {
+  background-color: #fff !important;
   border-radius: 10px;
-}
-
-.Dropdown Button:hover {
-  animation: pulse 0.3s ease-out 1 forwards;
 }
 
 @keyframes pulse {
@@ -127,6 +144,6 @@
 
   100% {
     background-color: #ff8800;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(235, 95, 7, 0.6);
   }
 }

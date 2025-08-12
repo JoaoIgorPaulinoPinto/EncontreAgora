@@ -1,10 +1,14 @@
 import Styles from './ProfileUserName.module.css'
 
-export default function ProfileUserName(){
+type props = {
+    nome: string;
+}
+
+export default function ProfileUserName(nome: props) {
 
     return (
         <div className={Styles.UserName}>
-                Nome de Usuario Neste Lugar
+            {nome.nome}
         </div>
 
     )

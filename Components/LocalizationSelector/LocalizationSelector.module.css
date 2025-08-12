@@ -30,22 +30,27 @@
   width: 120px;
   height: 35px;
   border-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  /* box-shadow suave laranja */
+  box-shadow: 0 4px 8px rgba(247, 138, 29, 0.15);
   background-color: #EB5F07;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
   color: #fff;
-  transition: background-color 0.3s ease;
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.localizationButton:hover,
+.localizationButton:focus {
+  /* sombra mais intensa e animação pulse */
+  box-shadow: 0 6px 12px rgba(247, 138, 29, 0.3);
+  animation: pulse 0.3s ease-out 1 forwards;
 }
 
 .locationFilter {
   display: flex;
   flex-direction: row;
-}
-
-.locationFilter button:hover {
-
-  animation: pulse 0.3s ease-out 1 forwards;
 }
 
 .locationFilter_input {
@@ -57,13 +62,18 @@
   width: 110px;
   margin-left: 2px;
   padding: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.1);
+
+  /* sombra leve preta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
   font-family: "Inter", "Roboto", "SF Pro Display", sans-serif;
   color: #1A1C1E;
   background-color: #fff;
+
+  transition: box-shadow 0.3s ease;
 }
 
 .locationFilter_input span {

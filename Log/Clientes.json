@@ -1,105 +1,353 @@
 [
     {
         "id": 1,
-        "contratante": "João Pedro de Arruda Gomes",
-        "empresa": "Beleza Tietê",
-        "endereco": "Rua Floriano Peixoto 123, Centro, Tietê - SP, 18530-000, Brazil",
+        "contratante": "Bruna Oliveira Santos",
+        "empresa": "Salão Elegance",
+        "endereco": "Rua Quinze de Novembro 200, Centro, Cerquilho - SP, 18520-000, Brazil",
         "servicos": [
             "Cabeleireiro",
-            "Manicure",
-            "Esteticista"
-        ]
+            "Manicure"
+        ],
+        "estrelas": 4,
+        "distancia_km": 7.8
     },
     {
         "id": 2,
-        "contratante": "Mariana Silva Costa",
-        "empresa": "Mãos de Ouro",
-        "endereco": "Avenida Brasil 45, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
+        "contratante": "Thiago Ribeiro Lopes",
+        "empresa": "FixTudo",
+        "endereco": "Rua São João 110, Centro, Boituva - SP, 18550-000, Brazil",
         "servicos": [
-            "Manicure",
             "Pedreiro",
             "Pintor",
             "Eletricista"
-        ]
+        ],
+        "estrelas": 5,
+        "distancia_km": 28.5
     },
     {
         "id": 3,
-        "contratante": "Carlos Eduardo Martins",
-        "empresa": "Construtora Martins",
-        "endereco": "Rua José Bonifácio 78, Centro, Tietê - SP, 18530-000, Brazil",
+        "contratante": "Lorena Garcia Almeida",
+        "empresa": "CuidaBem",
+        "endereco": "Rua Paraná 88, Centro, Cerquilho - SP, 18520-000, Brazil",
+        "servicos": [
+            "Babá",
+            "Cuidador de idosos"
+        ],
+        "estrelas": 3,
+        "distancia_km": 8.2
+    },
+    {
+        "id": 4,
+        "contratante": "Mateus Fernandes Braga",
+        "empresa": "Jardins Verdes",
+        "endereco": "Alameda das Orquídeas 45, Jardim Primavera, Tatuí - SP, 18270-000, Brazil",
+        "servicos": [
+            "Jardineiro",
+            "Pedreiro"
+        ],
+        "estrelas": 4,
+        "distancia_km": 41.7
+    },
+    {
+        "id": 5,
+        "contratante": "Patrícia Souza Franco",
+        "empresa": "Estética Suprema",
+        "endereco": "Rua Domingos da Silva 190, Centro, Laranjal Paulista - SP, 18500-000, Brazil",
+        "servicos": [
+            "Esteticista",
+            "Manicure"
+        ],
+        "estrelas": 5,
+        "distancia_km": 24.3
+    },
+    {
+        "id": 6,
+        "contratante": "Gabriel Nunes Araújo",
+        "empresa": "FotoArt",
+        "endereco": "Praça da Matriz 12, Centro, Jumirim - SP, 18535-000, Brazil",
+        "servicos": [
+            "Fotógrafo"
+        ],
+        "estrelas": 4,
+        "distancia_km": 13.4
+    },
+    {
+        "id": 7,
+        "contratante": "Camila Batista Pires",
+        "empresa": "Auto Limpeza Express",
+        "endereco": "Avenida República 360, Centro, Boituva - SP, 18550-000, Brazil",
+        "servicos": [
+            "Lavador de carros"
+        ],
+        "estrelas": 3,
+        "distancia_km": 29.1
+    },
+    {
+        "id": 8,
+        "contratante": "Rafael Costa Meireles",
+        "empresa": "TechPlus Assistência",
+        "endereco": "Rua Campos Salles 230, Centro, Cesário Lange - SP, 18285-000, Brazil",
+        "servicos": [
+            "Técnico de informática",
+            "Eletricista"
+        ],
+        "estrelas": 5,
+        "distancia_km": 34.9
+    },
+    {
+        "id": 9,
+        "contratante": "Simone Couto Dias",
+        "empresa": "Vigilância Elite",
+        "endereco": "Rua dos Andradas 77, Centro, Porto Feliz - SP, 18540-000, Brazil",
+        "servicos": [
+            "Segurança / Vigilante"
+        ],
+        "estrelas": 4,
+        "distancia_km": 20.7
+    },
+    {
+        "id": 10,
+        "contratante": "Diego Campos Ventura",
+        "empresa": "Mecânica Rápida",
+        "endereco": "Avenida das Nações 400, Centro, Cerquilho - SP, 18520-000, Brazil",
+        "servicos": [
+            "Mecânico"
+        ],
+        "estrelas": 4,
+        "distancia_km": 9.1
+    },
+    {
+        "id": 11,
+        "contratante": "Helena Vieira Costa",
+        "empresa": "Studio Bela Vida",
+        "endereco": "Rua São Joaquim 155, Centro, Conchas - SP, 18570-000, Brazil",
+        "servicos": [
+            "Cabeleireiro",
+            "Manicure"
+        ],
+        "estrelas": 5,
+        "distancia_km": 33.2
+    },
+    {
+        "id": 12,
+        "contratante": "Lucas Teixeira Prado",
+        "empresa": "ProntoService",
+        "endereco": "Rua Bahia 67, Centro, Pereiras - SP, 18540-000, Brazil",
+        "servicos": [
+            "Pedreiro",
+            "Pintor",
+            "Eletricista"
+        ],
+        "estrelas": 4,
+        "distancia_km": 18.9
+    },
+    {
+        "id": 13,
+        "contratante": "Isabela Rocha Barros",
+        "empresa": "Vida Plena",
+        "endereco": "Rua Santos Dumont 102, Centro, Jumirim - SP, 18535-000, Brazil",
+        "servicos": [
+            "Babá",
+            "Cuidador de idosos"
+        ],
+        "estrelas": 5,
+        "distancia_km": 12.4
+    },
+    {
+        "id": 14,
+        "contratante": "Anderson Moraes Lima",
+        "empresa": "GreenLand",
+        "endereco": "Rua São Paulo 540, Centro, Cerquilho - SP, 18520-000, Brazil",
+        "servicos": [
+            "Jardineiro",
+            "Pedreiro"
+        ],
+        "estrelas": 3,
+        "distancia_km": 10.2
+    },
+    {
+        "id": 15,
+        "contratante": "Tatiane Almeida Lopes",
+        "empresa": "Spa Iyashi",
+        "endereco": "Rua José de Alencar 15, Centro, Laranjal Paulista - SP, 18500-000, Brazil",
+        "servicos": [
+            "Esteticista",
+            "Manicure"
+        ],
+        "estrelas": 4,
+        "distancia_km": 24.7
+    },
+    {
+        "id": 16,
+        "contratante": "Marcos Aurélio Gomes",
+        "empresa": "ClickFoto",
+        "endereco": "Rua XV de Novembro 210, Centro, Porto Feliz - SP, 18540-000, Brazil",
+        "servicos": [
+            "Fotógrafo"
+        ],
+        "estrelas": 5,
+        "distancia_km": 22.3
+    },
+    {
+        "id": 17,
+        "contratante": "Renata Paz Caldas",
+        "empresa": "LimpaCar",
+        "endereco": "Av. Getúlio Vargas 89, Centro, Conchas - SP, 18570-000, Brazil",
+        "servicos": [
+            "Lavador de carros"
+        ],
+        "estrelas": 4,
+        "distancia_km": 35.8
+    },
+    {
+        "id": 18,
+        "contratante": "José Renato Vasques",
+        "empresa": "MasterTech",
+        "endereco": "Rua Dom Pedro I 211, Centro, Itu - SP, 13300-070, Brazil",
+        "servicos": [
+            "Técnico de informática",
+            "Eletricista"
+        ],
+        "estrelas": 5,
+        "distancia_km": 52.6
+    },
+    {
+        "id": 19,
+        "contratante": "Flávia Souza Rocha",
+        "empresa": "Protege+",
+        "endereco": "Av. Prudente de Moraes 432, Centro, Sorocaba - SP, 18010-000, Brazil",
+        "servicos": [
+            "Segurança / Vigilante"
+        ],
+        "estrelas": 4,
+        "distancia_km": 68.9
+    },
+    {
+        "id": 20,
+        "contratante": "Henrique Faria Melo",
+        "empresa": "AutoMec Prime",
+        "endereco": "Av. Sorocaba 300, Centro, Salto - SP, 13320-000, Brazil",
+        "servicos": [
+            "Mecânico"
+        ],
+        "estrelas": 3,
+        "distancia_km": 45.1
+    },
+    {
+        "id": 21,
+        "contratante": "Eduarda Lima Vasconcelos",
+        "empresa": "Toque Final",
+        "endereco": "Rua Dom Pedro I 333, Centro, Laranjal Paulista - SP, 18500-000, Brazil",
+        "servicos": [
+            "Cabeleireiro",
+            "Esteticista"
+        ],
+        "estrelas": 5,
+        "distancia_km": 25.6
+    },
+    {
+        "id": 22,
+        "contratante": "Murilo Teixeira Barbosa",
+        "empresa": "Barbosa Reformas",
+        "endereco": "Rua Santa Cruz 90, Centro, Cesário Lange - SP, 18285-000, Brazil",
+        "servicos": [
+            "Pedreiro",
+            "Pintor"
+        ],
+        "estrelas": 4,
+        "distancia_km": 35.2
+    },
+    {
+        "id": 23,
+        "contratante": "Tatiane Mendes Rocha",
+        "empresa": "Jardins da Tatá",
+        "endereco": "Rua das Laranjeiras 25, Vila São João, Tatuí - SP, 18270-000, Brazil",
+        "servicos": [
+            "Jardineiro"
+        ],
+        "estrelas": 3,
+        "distancia_km": 42.5
+    },
+    {
+        "id": 24,
+        "contratante": "Felipe Henrique Moraes",
+        "empresa": "EletroFix",
+        "endereco": "Rua General Osório 480, Centro, Porto Feliz - SP, 18540-000, Brazil",
+        "servicos": [
+            "Eletricista",
+            "Técnico de informática"
+        ],
+        "estrelas": 4,
+        "distancia_km": 21.8
+    },
+    {
+        "id": 25,
+        "contratante": "Vanessa Cruz Ferreira",
+        "empresa": "Click & Flash",
+        "endereco": "Rua Antônio Prado 12, Centro, Cerquilho - SP, 18520-000, Brazil",
+        "servicos": [
+            "Fotógrafo"
+        ],
+        "estrelas": 5,
+        "distancia_km": 7.4
+    },
+    {
+        "id": 26,
+        "contratante": "Rodrigo Silva Queiroz",
+        "empresa": "RS Proteção",
+        "endereco": "Avenida Brasil 220, Jardim Paraíso, Laranjal Paulista - SP, 18500-000, Brazil",
+        "servicos": [
+            "Segurança / Vigilante"
+        ],
+        "estrelas": 4,
+        "distancia_km": 23.9
+    },
+    {
+        "id": 27,
+        "contratante": "Isabela Moura Dantas",
+        "empresa": "Cuidar com Amor",
+        "endereco": "Rua das Rosas 55, Centro, Jumirim - SP, 18535-000, Brazil",
+        "servicos": [
+            "Babá",
+            "Cuidador de idosos"
+        ],
+        "estrelas": 5,
+        "distancia_km": 12.6
+    },
+    {
+        "id": 28,
+        "contratante": "Caio Fábio Martins",
+        "empresa": "ReparaJá",
+        "endereco": "Rua João Pessoa 88, Centro, Boituva - SP, 18550-000, Brazil",
         "servicos": [
             "Pedreiro",
             "Eletricista",
             "Encanador"
-        ]
+        ],
+        "estrelas": 4,
+        "distancia_km": 30.3
     },
     {
-        "id": 4,
-        "contratante": "Fernanda Alves Ribeiro",
-        "empresa": "Estética Bella",
-        "endereco": "Rua São Paulo 210, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
+        "id": 29,
+        "contratante": "Juliana Torres Pinto",
+        "empresa": "Studio Belíssima",
+        "endereco": "Rua do Comércio 102, Jardim São Luiz, Tatuí - SP, 18270-000, Brazil",
         "servicos": [
-            "Esteticista",
-            "Manicure",
-            "Cabeleireiro"
-        ]
+            "Cabeleireiro",
+            "Manicure"
+        ],
+        "estrelas": 5,
+        "distancia_km": 44.8
     },
     {
-        "id": 5,
-        "contratante": "Paulo Henrique Souza",
-        "empresa": "Tecno Assistência",
-        "endereco": "Rua das Palmeiras 39, Centro, Tietê - SP, 18530-000, Brazil",
+        "id": 30,
+        "contratante": "André Nascimento Braga",
+        "empresa": "Braga Car Wash",
+        "endereco": "Avenida Central 90, Jardim Novo Horizonte, Cerquilho - SP, 18520-000, Brazil",
         "servicos": [
-            "Técnico de informática",
-            "Eletricista"
-        ]
-    },
-    {
-        "id": 6,
-        "contratante": "Letícia Ramos Dias",
-        "empresa": "Jardins & Cia",
-        "endereco": "Avenida Brasil 321, Povo Feliz, Tietê - SP, 18530-020, Brazil",
-        "servicos": [
-            "Jardineiro",
-            "Pedreiro"
-        ]
-    },
-    {
-        "id": 7,
-        "contratante": "Ricardo Lopes Ferreira",
-        "empresa": "Auto Rápido Tietê",
-        "endereco": "Rua São Sebastião 67, Centro, Tietê - SP, 18530-000, Brazil",
-        "servicos": [
-            "Lavador de carros",
-            "Mecânico"
-        ]
-    },
-    {
-        "id": 8,
-        "contratante": "Ana Carolina Moreira",
-        "empresa": "Cuidado e Carinho",
-        "endereco": "Rua Padre Anchieta 150, Jardim Maria Luiza, Tietê - SP, 18530-010, Brazil",
-        "servicos": [
-            "Babá",
-            "Cuidador de idosos"
-        ]
-    },
-    {
-        "id": 9,
-        "contratante": "Marcelo Souza Pereira",
-        "empresa": "Segurança Total",
-        "endereco": "Rua Dom Pedro II 98, Centro, Tietê - SP, 18530-000, Brazil",
-        "servicos": [
-            "Segurança / Vigilante"
-        ]
-    },
-    {
-        "id": 10,
-        "contratante": "Juliana Martins Lima",
-        "empresa": "FotoFlash",
-        "endereco": "Avenida das Acácias 77, Jardim Belvedere, Tietê - SP, 18530-015, Brazil",
-        "servicos": [
-            "Fotógrafo"
-        ]
+            "Lavador de carros"
+        ],
+        "estrelas": 3,
+        "distancia_km": 6.9
     }
 ]
