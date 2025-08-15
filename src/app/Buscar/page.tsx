@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import TextBox from '../../../Components/TextBox/TextBox.jsx';
-import DropdownSrc from '../../../Components/Dropdowns/DropdownSrc.jsx';
-import Dropdown from '../../../Components/Dropdowns/Dropdown.jsx';
+import TextBox from '../../../Components/TextBox/TextBox';
+import DropdownSrc from '../../../Components/Dropdowns/DropdownSrc';
+import Dropdown from '../../../Components/Dropdowns/Dropdown';
 import styles from './buscar.module.css';
 import servicosData from '../../../Log/Servicos.json';
 import LocalizationSelector from '../../../Components/LocalizationSelector/LocalizationSelector';
@@ -32,7 +32,7 @@ export default function Buscar() {
           />
         </div>
         <div className={styles.chooseLocation}>
-          <LocalizationSelector onEnderecoSelecionado={(value) => { SetEndereco(value); }} />
+          <LocalizationSelector onEnderecoSelecionado={(a: any) => { SetEndereco(a); }} />
         </div>
       </div>
 

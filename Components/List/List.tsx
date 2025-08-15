@@ -1,3 +1,6 @@
+"use client"; // necessário para usar hooks
+
+import { useRouter } from "next/navigation";
 import React from "react";
 import Styles from "./List.module.css";
 import Clients from "../../Log/Clientes.json";
@@ -18,6 +21,7 @@ interface ClientListProps {
 }
 
 export default function ClientList({ order = "Melhor avaliados", service }: ClientListProps) {
+    const router = useRouter();
     const clients = (Clients as Empresa[])
         .filter(client =>
             service
@@ -40,21 +44,19 @@ export default function ClientList({ order = "Melhor avaliados", service }: Clie
             return 0;
         });
 
-
-    // retornar ou renderizar os clientes aqui
-
+    const Selected = (empresa: Empresa) => {
+        router.push(`/Perfil/${empresa.id}`);
+    }
 
 
     return (
         <>
             <div className={Styles.list}>
-
                 {clients.map(item => (
-                    <div key={item.id} className={Styles.card}>
+                    <div onClick={() => Selected(item)} key={item.id} className={Styles.card}>
                         <div className={Styles.ProfileAvatar}>
                             <img src="https://cdn-icons-png.flaticon.com/512/8608/8608769.png" alt="Avatar" />
                         </div>
-
                         <div className={Styles.info}>
                             <div className={Styles.name}>{item.empresa}</div>
 
@@ -77,7 +79,7 @@ export default function ClientList({ order = "Melhor avaliados", service }: Clie
 
                 ))}
 
-            </div>
+            </div >
         </>
     );
 }
